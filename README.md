@@ -9,7 +9,7 @@ python --version (muestra la versión del python instalada en el equipo)
 ```
 git --version (muestra la versión del git instalado en el equipo)
 git init (solo una vez en una carpeta) 
-git add . (comprime archivos)
+git add . (agregar archivos)
 git commit -m "primer commit" 
 ```
 
@@ -56,4 +56,5 @@ li*2 multiplica la etiqueta
 <ol>: Lista ordenada
 <ul>: Lista no ordenada
 ctrl + shift + k: para eliminar una línea 
+div.container y espacio o tab: autocompleta la etiqueta
 ``` 
