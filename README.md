@@ -30,4 +30,29 @@ Para clonar carpeta, desde consola se ingresa:
 cd PROFES 
 y se da la ruta: 
 git clone https://github.com/fernandogh7508/IAG344.git
+
 ```
+
+```
+v2
+
+cd PERSONAL
+git status
+git remote -v
+git push
+git add .
+git status
+git commit -m "IAG344 v2"
+git add .
+git push
+```
+
+```
+html
+
+alt + shift + a: para sacar el comentario
+alt + shift + flecha: para duplicar
+li*2 multiplica la etiqueta
+<ol>: Lista ordenada
+<ul>: Lista no ordenada
+``` 
