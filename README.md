@@ -1,19 +1,19 @@
 # Clase IA
 ## ❤️Comandos Consola
-### ![imagen de python](PERSONAL/image.png)
+### ![imagen de python](image.png)
 ```
-python --version
+python --version (muestra la versión del python instalada en el equipo)
 
 ```
-### ![imagen de git](PERSONAL/image-2.png)
+### ![imagen de git](image-2.png)
 ```
-git --version
+git --version (muestra la versión del git instalado en el equipo)
 git init (solo una vez en una carpeta) 
 git add . (comprime archivos)
 git commit -m "primer commit" 
 ```
 
-### ![imagen de git](PERSONAL/image-1.png)
+### ![imagen de git](image-1.png)
 
 ```
 git branch -M main (rama principal)
@@ -55,4 +55,5 @@ alt + shift + flecha: para duplicar
 li*2 multiplica la etiqueta
 <ol>: Lista ordenada
 <ul>: Lista no ordenada
+ctrl + shift + k: para eliminar una línea 
 ``` 
