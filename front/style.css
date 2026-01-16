@@ -1,0 +1,40 @@
+/* estilo para toda la web */
+
+*{
+    margin: 0; /* quitar margenes por defecto */
+    padding: 0; /* quita rellenos por defecto */
+}
+
+/* estilo header */
+
+.header{
+    background: #e43377; /* color de fondo en hexadesimal */
+    color: rgb(235, 235, 238);/* color letra */
+    padding: 16px 24px; /* Espacio interno */
+    display: flex;/* logo y menú en fila */
+    align-items: center; /* Elementos en fila */
+    justify-content: space-between; /* Separa izquierda y derecha */
+}
+    
+/* estilo título web */
+
+.nombre{
+     font-size: 22px;  /* tamaño en pixeles */
+}
+
+/* Enlaces del menú */
+.nav-link{
+    color: white;
+    text-decoration: none; /* quita subrayado */
+    margin-left: 12px; /* espacio entre links */
+    opacity: 0.85; /* color suave */
+}
+
+.nav-link:hover{
+    opacity: 1;
+    text-decoration: underline;
+    color: rgb(243, 133, 160);
+    background-color: rgb(240, 232, 233);
+    border-radius: 5px;
+}
+
