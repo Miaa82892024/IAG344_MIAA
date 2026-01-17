@@ -56,7 +56,11 @@ li*2 multiplica la etiqueta
 <ul>: Lista no ordenada
 ctrl + shift + k: para eliminar una línea 
 div.container y espacio o tab: autocompleta la etiqueta
-alt+shift+f: organizar la tabla
+alt+shift+f: organizar la tabla y organiza la identación
+alt+ctrl+shift+flecha haacia abajo: selecciona varias líneas 
+
+bootstrap: https://getbootstrap.com/
+
 ``` 
 ## 😍 Python
 
@@ -64,7 +68,10 @@ alt+shift+f: organizar la tabla
 pip list: se encarga de realizar las instalaciones de las librerías 
 python -m venv env3.13.5: crea entorno virtual para proyecto (verificar la versión de python)
 env3.13.5\Scripts\activate: activar entorno virtual (sale error por primera vez)
+
 Para corregir el error: en el buscador, ejecuta como administrador Powershell de Windows y digita set-ExecutionPolicy Unrestricted y dale S y enter
+
+deactivate: Desactivar entorno virtual
 
 #documenta en python
 import re: expresiones regulares, librería estandar 
@@ -94,7 +101,6 @@ r"\d+" es el patrón:
 👉 Está intentando buscar números dentro de texto.
 
 Pero como texto está vacío (""), no hay ningún número, entonces: resultado = None
-
 
 
 ```
