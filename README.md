@@ -66,7 +66,9 @@ bootstrap: https://getbootstrap.com/
 
 ```
 pip list: se encarga de realizar las instalaciones de las librerías 
+
 python -m venv env3.13.5: crea entorno virtual para proyecto (verificar la versión de python)
+
 env3.13.5\Scripts\activate: activar entorno virtual (sale error por primera vez)
 
 Para corregir el error: en el buscador, ejecuta como administrador Powershell de Windows y digita set-ExecutionPolicy Unrestricted y dale S y enter
@@ -102,12 +104,65 @@ r"\d+" es el patrón:
 
 Pero como texto está vacío (""), no hay ningún número, entonces: resultado = None
 
+Con esta línea de código lo que hace es organizarme los números en una lista
+resultado=re.findall(r"\d+",texto)
+print(f"{texto} Resultado {resultado}")
+
+Para declarar función se usa la palabra reservada 
+def nombre():
+
+Ejecutar una función
+
+print(nombre de la función)
+
+En ejemplo me separa número de los otros caracteres:
+
+documento="CC 24.314.567"
+
+def clean_id(docu):
+    
+    return re.sub(r"\D","",documento)
+
+print(clean_id(documento))
+
+Archivos test: Pruebas unitarias en el código
+
+1. Documento para prueba de negocios
+2. Documento de pruebas (test)
+
+Para hacer las pruebas del test
+
+Pip install pytest
+
+Para actualizar 
+python.exe -m pip install --upgrade
+
+Para instalar la librería para pruebas
+pip install pytest
+
+Para mostrar las librerías instaladas
+pip list
+
+En la lógica de negocio (proccessor.py) y esta lo que la automatización debe hacer, luego la interfaz gráfica y por último el archivo ejecutable, aunque como es pequeña la alicación estas 2 últimas se pueden unir.
+
+crear un .exe
+1. Instalar librerias
+   pip install pyinstaller
+
+2. Crear el .exe
+   pyinstaller --onefile --windowed app.py
 
 ```
 
-## 😁 Comandos de consola
+## 😁 Comandos de consola (cmd)
 
 ```
+|comando|Descripcion|
+|-|-|: lo que esta encima es el título
+|`cd`|cambio de directorio|
+|`cd..`|cambio de directorio|
+|`dir`|listar|
+alt+shif+f: para organizar la tabla
 cd: navega entre archivos
 cd .. : se devuelve 
 dir: visualiza archivos
