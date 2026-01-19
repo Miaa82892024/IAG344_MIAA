@@ -71,6 +71,8 @@ python -m venv env3.13.5: crea entorno virtual para proyecto (verificar la versi
 
 env3.13.5\Scripts\activate: activar entorno virtual (sale error por primera vez)
 
+
+
 Para corregir el error: en el buscador, ejecuta como administrador Powershell de Windows y digita set-ExecutionPolicy Unrestricted y dale S y enter
 
 deactivate: Desactivar entorno virtual
