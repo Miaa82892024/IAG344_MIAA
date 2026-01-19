@@ -14,7 +14,7 @@ header{
 
 /* Opacidad barra de progreso */
 .progress{
-    background-color: rgba(255, 255, 255, 0.2);
+    background-color: rgba(255, 255, 255, 0.2) !important;
 }
 
 /* cambio color texto col dere */
