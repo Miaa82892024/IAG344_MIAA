@@ -6,6 +6,8 @@ training_data =[
     ("información", "Con gusto te brindamos la información que necesitas. ¿Sobre qué tema?"),
     ("soporte", "Nuestro equipo de soporte está listo para ayudarte. Cuéntanos tu inconveniente."),
     ("precio", "Con gusto te compartimos nuestros precios. ¿Qué servicio te interesa?"),
-    ("gracias", "Gracias a ti por comunicarte con nosotros. ¡Que tengas un excelente día!")
+    ("gracias", "Gracias a ti por comunicarte con nosotros. ¡Que tengas un excelente día!"),
+    ("chiste", "Qué le dijo un árbol a otro árbol")
+    
 
     ]
