@@ -25,7 +25,7 @@ def merge_name(name, lastname):
     return f"{name} {lastname}".strip()
 
 
-def ejecutar_accion(path):
+def ejecutar_accion(path, instruccion):
     """
     Procesa el archivo Excel:
     - Limpia el identificador (columna A → D)
@@ -35,29 +35,41 @@ def ejecutar_accion(path):
 
     # Acceso a la hoja llamada "Datos"
     ws = wb["Datos"]
+    
+    columnas={"A"}
+    
+    extra=instruccion.get("extra_column")
+    
+    if extra:
+        columnas.add(extra)
 
     # Recorrer todas las filas desde la fila 2
-    for row in range(2, ws.max_row + 1):
-        # Columna D: identificador limpio
-        ws[f"D{row}"] = clean_id(ws[f"A{row}"].value)
+    
+        for row in range(2, ws.max_row + 1):
+            # Columna D: identificador limpio
+            ws[f"D{row}"] = clean_id(ws[f"A{row}"].value)
+            
+            for col in columnas:
+                if col !="A":
+                    ws[f"{col}{row}"]=clean_id(ws[f"{col}{row}"].value)
 
-        # Columna E: nombre completo
-        ws[f"E{row}"] = merge_name(
+            # Columna E: nombre completo
+            ws[f"E{row}"] = merge_name(
             ws[f"B{row}"].value,
             ws[f"C{row}"].value
-        )
+            )
 
     # Guardar los cambios en el mismo archivo
     wb.save(path)
 
 
-def process_excel_safe(path):
+def process_excel_safe(path, instruccion):
     """
     Ejecuta el procesamiento del Excel de forma segura,
     controlando errores comunes.
     """
     try:
-        ejecutar_accion(path)
+        ejecutar_accion(path, instruccion)
         return True, "Archivo procesado correctamente"
 
     except PermissionError:

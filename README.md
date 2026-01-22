@@ -33,7 +33,7 @@ y se da la ruta:
 git clone https://github.com/fernandogh7508/IAG344.git
 
 ```
-## 😘 v2
+## 😘 Comandos git para subir archivos 
 ```
 cd PERSONAL
 git status
@@ -70,7 +70,6 @@ pip list: se encarga de realizar las instalaciones de las librerías
 python -m venv env3.13.5: crea entorno virtual para proyecto (verificar la versión de python)
 
 env3.13.5\Scripts\activate: activar entorno virtual (sale error por primera vez)
-
 
 
 Para corregir el error: en el buscador, ejecuta como administrador Powershell de Windows y digita set-ExecutionPolicy Unrestricted y dale S y enter
@@ -168,4 +167,29 @@ alt+shif+f: para organizar la tabla
 cd: navega entre archivos
 cd .. : se devuelve 
 dir: visualiza archivos
+```
+
+## 😁 Comandos Panda
+```
+#LIBRERIAS
+--
+import pandas as pd #pip install pandas
+--
+df =pd.read_csv("./dataset.csv")
+df.head(5)
+--
+df.describe()
+--
+df["favorites"]
+--
+df.loc[0:2]
+--
+df.loc[[0,1,7]]
+--
+df.loc[[1,7],["favorites"]]
+--
+df[df["favorites"]>400]
+--
+df[(df["favorites"]>400)&(df["mentions"]>20)]
+
 ```

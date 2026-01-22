@@ -13,17 +13,24 @@ def interpretar_texto(texto):
         raise ValueError("La instrucción está vacía")
 
     texto = texto.lower()
+    
+    instruccion={
+        "accion":None,
+        "extra_colum":None
+    }
+    
+    #Detectar columna (ej: columna B, columna F)
+    match_col=instruccion["extra_column"]=match.col.group(1).upper()
 
     # Intención: limpiar identificadores
     if re.search(r"\blimpia(r)?\b", texto):
-        return "Limpieza de identificadores detectada"
-
+        instruccion["accion"]="limpiar"
+        
     # Intención: unir nombre y apellido
     if re.search(r"\bune\b|\bunir\b", texto) and "nombre" in texto:
-        return "Unión de nombre y apellido detectada"
-
-    # Intención general de procesamiento
-    if "procesa" in texto or "excel" in texto:
-        return "Procesamiento de archivo Excel detectado"
-
-    raise ValueError("No se pudo interpretar la instrucción")
+        instruccion["accion"]="unir"
+        
+    if not instruccion["accion"]:
+        raise ValueError("No se pudo interpretar la insrrucción")
+    
+    return instruccion
